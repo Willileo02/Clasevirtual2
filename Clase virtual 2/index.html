@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap-->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- css-->
+    <link rel="stylesheet" href="css/App.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="nav-link" aria-current="page" href="index.html">
+          <img src="img/logo2.png" alt="logo" width="210" height="80">
+          </a>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: 20px;" href="#">Productos
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: 20px;" href="#">Productos App</a>
+            </li>
+      </div>
+      </nav>
+      
+      <div class="container-lg  pt-4  p-5" style="max-width: 700px">
+        <div class="container-lg fondo pt-4  p-5 card  mb-3" style="background: rgba(0,0,0, 1.0)">
+          <div class="contenedor">
+            <div class="columna medida_columna">
+    
+              <div class="meidia-1">
+                  <div class="tarjeta">
+                      <div class="tarjeta-header">
+                        <h4 class="subtitulo">Agregar Producto</h4>
+                      </div>
+                      <br>
+                  <form id="Producto-formulario" class="tarjeta-body">
+                      <div class="grupo-formulario">
+                        <div class=form-floating mb-3"">
+                          <input 
+                          type="text"
+                          id="nombre"
+                          placeholder="Nombre del producto"
+                          class="control-formulario form-control"
+                          required/>
+                          <label for="floatingInput">Ingrese el nombre del producto</label>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="grupo-formulario ">
+                        <div class="form-floating mb-3">
+                          <input 
+                          type="number"
+                          id="precio"
+                          step="0.01"
+                          placeholder="Precio del producto"
+                          required
+                          class="control-formulario form-control"/>
+                          <label for="floatingInput">Precio del producto</label>
+                        </div>
+                      </div>
+                      <div class="grupo-formulario">
+                          <input 
+                          type="number"
+                          id="año"
+                          step="1"
+                          value="2022"
+                          class="control-formulario form-control "
+                          required/>
+                      </div>
+                      
+                      <br>
+                      <input 
+                      type="submit"
+                      value="Guardar el producto"
+                      class="btn btn-success"
+                     />
+                  </form>
+                  </div> 
+              </div>
+              <!-- Lista de productos-->
+              <div id="producto-lista" class="medida-3"></div>
+            </div>
+        </div>
+        </div>
+      </div>        
+      
+
+    <script src="App.js"> </script>
+
+
+</body>
+</html>
